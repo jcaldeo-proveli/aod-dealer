@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Become a Dealer — Addresses of Distinction</title>
+<!--
+  ============================================================
+  BIGCOMMERCE UPLOAD NOTES:
+  - All styles are inline in this <style> block — no external CSS files needed
+  - Google Fonts loaded via <link> — works in BigCommerce page builder
+  - No framework dependencies (no React, no Vue, vanilla JS only)
+  - Images use picsum.photos placeholders — replace src="" values with your actual images
+  - To use in BigCommerce: paste this entire file into a Custom Page > HTML editor
+  - Or use as a Page Builder "HTML Block" widget
+  - Phone number, links, and form action should be updated before go-live
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --green:       #4A6741;
+  --green-dark:  #354D2F;
+  --green-deep:  #263822;
+  --green-light: #6A8D60;
+  --green-pale:  #EDF2EB;
+  --green-mist:  #F4F7F3;
+  --cream:       #FAF8F4;
+  --white:       #FFFFFF;
+  --ink:         #1C1C1C;
+  --ink-soft:    #6B6B6B;
+  --border:      #E0E8DC;
+  --border-soft: #EEF2ED;
+  --radius:      6px;
+  --radius-sm:   3px;
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background:var(--white);
+  color:var(--ink);
+  font-family:'Mulish', sans-serif;
+  font-weight:300;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img { display:block; max-width:100%; }
+a { text-decoration:none; color:inherit; }
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.eyebrow {
+  font-size:10px; letter-spacing:0.25em; text-transform:uppercase;
+  color:var(--green); margin-bottom:12px;
+  display:flex; align-items:center; gap:10px;
+}
+.eyebrow::after { content:''; width:28px; height:1px; background:var(--green); opacity:0.5; }
+.section-h {
+  font-family:'Playfair Display', serif;
+  font-size:clamp(26px,3vw,42px); font-weight:400; line-height:1.15;
+}
+.section-h em { font-style:italic; color:var(--green); }
+.section-h.light { color:var(--cream); }
+.section-h.light em { color:var(--green-light); }
+.section-p { font-size:15px; color:var(--ink-soft); line-height:1.8; max-width:560px; margin-top:14px; }
+.section-p.light { color:rgba(244,247,243,0.65); }
+
+.btn-solid {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:15px 32px; background:var(--green);
+  color:var(--white); border:2px solid var(--green);
+  border-radius:var(--radius-sm); cursor:pointer;
+  font-family:'Mulish', sans-serif;
+  font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase;
+  transition:all 0.25s;
+}
+.btn-solid:hover { background:var(--green-dark); border-color:var(--green-dark); }
+.btn-outline {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:15px 32px; background:transparent;
+  color:var(--white); border:2px solid rgba(255,255,255,0.35);
+  border-radius:var(--radius-sm); cursor:pointer;
+  font-family:'Mulish', sans-serif;
+  font-size:12px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase;
+  transition:all 0.25s;
+}
+.btn-outline:hover { border-color:rgba(255,255,255,0.7); }
+
+/* SECTION WRAPPERS */
+.sec { padding:80px 64px; }
+.sec.bg-mist  { background:var(--green-mist); }
+.sec.bg-pale  { background:var(--green-pale); }
+.sec.bg-white { background:var(--white); }
+.sec.bg-cream { background:var(--cream); }
+.sec.bg-deep  { background:var(--green-deep); }
+.sec.bg-dark  { background:var(--green-dark); }
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+.top-bar {
+  background:var(--green-deep);
+  display:flex; justify-content:space-between; align-items:center;
+  padding:8px 64px; font-size:12px; color:rgba(244,247,243,0.7);
+}
+.top-bar a { color:rgba(244,247,243,0.7); }
+.top-bar a:hover { color:var(--cream); }
+.top-bar-phone {
+  display:flex; align-items:center; gap:8px;
+  font-weight:500; color:var(--cream);
+}
+.top-bar-links { display:flex; gap:20px; }
+
+/* ============================================================
+   NAV
+   ============================================================ */
+nav {
+  position:sticky; top:0; z-index:200;
+  background:rgba(255,255,255,0.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border-soft);
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 64px; height:70px;
+  box-shadow:0 1px 12px rgba(0,0,0,0.05);
+}
+.nav-logo-wrap {
+  display:flex; flex-direction:column; gap:1px;
+}
+.nav-logo-name {
+  font-family:'Playfair Display', serif;
+  font-size:17px; font-weight:500; color:var(--green-dark); letter-spacing:0.04em;
+}
+.nav-logo-sub {
+  font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-soft);
+}
+.nav-links {
+  display:flex; align-items:center; gap:4px;
+}
+.nav-links a {
+  font-size:13px; font-weight:400; color:var(--ink-soft);
+  padding:8px 14px; border-radius:var(--radius-sm);
+  transition:all 0.2s;
+}
+.nav-links a:hover { color:var(--ink); background:var(--green-mist); }
+.nav-links a.active { color:var(--green-dark); font-weight:500; }
+.nav-login {
+  margin-left:4px;
+  padding:9px 18px; border:1.5px solid var(--border);
+  border-radius:var(--radius-sm); font-family:'Mulish', sans-serif;
+  font-size:12px; font-weight:500; color:var(--green-dark);
+  background:transparent; cursor:pointer;
+  letter-spacing:0.06em; text-transform:uppercase;
+  transition:all 0.2s;
+  display:flex; align-items:center; gap:7px;
+}
+.nav-login:hover { border-color:var(--green); background:var(--green-pale); }
+.nav-apply {
+  margin-left:8px;
+  padding:9px 22px; background:var(--green);
+  color:var(--white); border:none; border-radius:var(--radius-sm);
+  cursor:pointer; font-family:'Mulish', sans-serif;
+  font-size:12px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;
+  transition:all 0.2s;
+}
+.nav-apply:hover { background:var(--green-dark); }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position:relative; overflow:hidden;
+  min-height:92vh;
+  display:grid; grid-template-columns:1fr 1fr;
+  align-items:center;
+}
+.hero-img-wrap {
+  position:absolute; inset:0; z-index:0;
+  width:100%;
+}
+/* 
+  PLACEHOLDER IMAGE — replace src with your actual hero background photo
+  Recommended: aerial/wide shot of beautiful residential community with mailboxes
+  Size: 1920×1080px or larger
+*/
+.hero-img-wrap img {
+  width:100%; height:100%; object-fit:cover; object-position:center;
+  filter:brightness(0.35);
+}
+.hero-overlay {
+  position:absolute; inset:0; z-index:1;
+  background:linear-gradient(105deg, rgba(38,56,34,0.82) 40%, rgba(38,56,34,0.4) 100%);
+}
+.hero-content {
+  position:relative; z-index:2;
+  padding:100px 64px 80px;
+  grid-column:1;
+}
+.hero-tag {
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:10px; letter-spacing:0.28em; text-transform:uppercase;
+  color:var(--green-light); margin-bottom:28px;
+  animation:fadeUp 0.9s ease both;
+}
+.hero-tag::before { content:''; width:28px; height:1px; background:var(--green-light); }
+.hero h1 {
+  font-family:'Playfair Display', serif;
+  font-size:clamp(38px,4.5vw,62px); font-weight:400; line-height:1.1;
+  color:var(--cream);
+  animation:fadeUp 0.9s 0.1s ease both;
+}
+.hero h1 em { font-style:italic; color:#A8C89A; }
+.hero-sub {
+  font-size:17px; color:rgba(244,247,243,0.7); max-width:480px;
+  margin-top:20px; line-height:1.75;
+  animation:fadeUp 0.9s 0.2s ease both;
+}
+.hero-actions {
+  display:flex; gap:14px; margin-top:40px; flex-wrap:wrap;
+  animation:fadeUp 0.9s 0.3s ease both;
+}
+.hero-stats {
+  display:flex; gap:44px; margin-top:56px; padding-top:40px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  animation:fadeUp 0.9s 0.4s ease both;
+}
+.hstat-num {
+  font-family:'Playfair Display', serif;
+  font-size:30px; color:var(--cream); line-height:1;
+}
+.hstat-lbl {
+  font-size:10px; letter-spacing:0.14em; text-transform:uppercase;
+  color:rgba(244,247,243,0.45); margin-top:3px;
+}
+
+/* value cards floating over hero right side */
+.hero-cards {
+  position:relative; z-index:2; grid-column:2;
+  padding:80px 64px 80px 40px;
+  display:flex; flex-direction:column; gap:14px;
+  justify-content:center;
+}
+.hcard {
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.1);
+  backdrop-filter:blur(8px);
+  border-radius:var(--radius); padding:22px 26px;
+  display:flex; align-items:flex-start; gap:16px;
+  transition:all 0.3s;
+  animation:fadeUp 0.8s ease both;
+}
+.hcard:hover { background:rgba(255,255,255,0.11); border-color:rgba(106,141,96,0.4); }
+.hcard:nth-child(1){animation-delay:0.15s;}
+.hcard:nth-child(2){animation-delay:0.25s;}
+.hcard:nth-child(3){animation-delay:0.35s;}
+.hcard:nth-child(4){animation-delay:0.45s;}
+.hcard-icon {
+  width:42px; height:42px; border-radius:8px;
+  background:rgba(74,103,65,0.3); display:grid; place-items:center;
+  font-size:20px; flex-shrink:0;
+}
+.hcard-title { font-size:14px; font-weight:600; color:var(--cream); margin-bottom:4px; }
+.hcard-desc  { font-size:12px; color:rgba(244,247,243,0.55); line-height:1.6; }
+
+/* ============================================================
+   VALUE PILLARS STRIP
+   ============================================================ */
+.pillars {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  gap:1px; background:var(--border);
+  border-top:3px solid var(--green);
+}
+.pillar {
+  background:var(--white); padding:32px 28px;
+  text-align:center; transition:background 0.2s;
+}
+.pillar:hover { background:var(--green-mist); }
+.pillar-icon { font-size:32px; margin-bottom:14px; }
+.pillar-title { font-size:13px; font-weight:600; color:var(--ink); margin-bottom:6px; letter-spacing:0.02em; }
+.pillar-desc  { font-size:12px; color:var(--ink-soft); line-height:1.7; }
+
+/* ============================================================
+   ABOUT / STORY SECTION
+   ============================================================ */
+.about-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center;
+}
+/* 
+  PLACEHOLDER — replace with actual community/install photo
+  Recommended: Job site photo — installers working, or a finished beautiful community entrance
+  Size: 800×600px
+*/
+.about-img-wrap {
+  border-radius:var(--radius); overflow:hidden;
+  box-shadow:0 12px 48px rgba(0,0,0,0.1);
+  position:relative;
+}
+.about-img-wrap img { width:100%; height:440px; object-fit:cover; object-position:center; }
+.about-img-badge {
+  position:absolute; bottom:20px; left:20px;
+  background:var(--green-dark); color:var(--cream);
+  padding:12px 18px; border-radius:var(--radius-sm);
+  font-size:12px; line-height:1.5;
+}
+.about-img-badge strong { display:block; font-family:'Playfair Display', serif; font-size:20px; }
+.about-body .eyebrow { margin-bottom:14px; }
+.about-list { margin-top:28px; display:flex; flex-direction:column; gap:14px; }
+.about-item {
+  display:flex; align-items:flex-start; gap:14px;
+  padding:16px 18px; border:1px solid var(--border-soft);
+  border-radius:var(--radius-sm); background:var(--white);
+  transition:border-color 0.2s;
+}
+.about-item:hover { border-color:var(--green-light); }
+.about-dot { width:8px; height:8px; border-radius:50%; background:var(--green); margin-top:6px; flex-shrink:0; }
+.about-item-title { font-size:13px; font-weight:600; margin-bottom:3px; }
+.about-item-desc  { font-size:12px; color:var(--ink-soft); line-height:1.7; }
+
+/* ============================================================
+   PRODUCT SECTIONS (Mailboxes + Signs)
+   ============================================================ */
+.product-sec-header { text-align:center; margin-bottom:48px; }
+.product-sec-header .section-p { margin:14px auto 0; }
+
+.product-grid-4 {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
+}
+.prod-card {
+  border:1.5px solid var(--border); border-radius:var(--radius);
+  overflow:hidden; background:var(--white);
+  transition:all 0.25s; cursor:pointer;
+}
+.prod-card:hover {
+  border-color:var(--green-light);
+  box-shadow:0 6px 24px rgba(74,103,65,0.12);
+  transform:translateY(-3px);
+}
+/*
+  PLACEHOLDER IMAGES for product cards
+  Each prod-img img — replace src with actual product photo
+  Recommended size: 400×400px, white or light grey background, product centered
+*/
+.prod-img {
+  aspect-ratio:1;
+  overflow:hidden;
+  background:var(--green-mist);
+  display:flex; align-items:center; justify-content:center;
+}
+.prod-img img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s; }
+.prod-card:hover .prod-img img { transform:scale(1.04); }
+.prod-info { padding:18px 20px; }
+.prod-name { font-size:14px; font-weight:600; color:var(--ink); }
+.prod-sub  { font-size:12px; color:var(--ink-soft); margin-top:4px; line-height:1.6; }
+.prod-tag  {
+  display:inline-block; font-size:9px; letter-spacing:0.1em; text-transform:uppercase;
+  padding:3px 9px; border-radius:2px;
+  background:var(--green-pale); color:var(--green);
+  margin-top:10px;
+}
+.prod-cta-row { margin-top:32px; text-align:center; }
+
+/* ============================================================
+   CONFIGURATOR SECTION
+   ============================================================ */
+.config-wrap { background:var(--white); border-top:1px solid var(--border); }
+.config-top {
+  background:var(--green-mist); padding:56px 40px 44px;
+  border-bottom:1px solid var(--border);
+  display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center;
+}
+.config-top-inner { width:100%; max-width:640px; }
+.config-top-inner .eyebrow { justify-content:center; }
+.progress-bar {
+  height:3px; background:var(--border); margin-top:24px;
+  width:100%; max-width:100%; border-radius:2px; overflow:hidden;
+}
+.progress-fill {
+  height:100%; background:var(--green); border-radius:2px;
+  transition:width 0.5s cubic-bezier(0.4,0,0.2,1); width:20%;
+}
+.price-guard {
+  background:var(--white); border:1.5px solid var(--border);
+  border-radius:var(--radius); padding:18px 22px;
+  display:flex; align-items:center; gap:14px;
+  min-width:300px; cursor:pointer; user-select:none; transition:border-color 0.2s;
+}
+.price-guard:hover { border-color:var(--green-light); }
+.toggle {
+  width:42px; height:24px; border-radius:12px;
+  background:var(--border); position:relative; transition:background 0.25s; flex-shrink:0;
+}
+.toggle.on { background:var(--green); }
+.toggle-dot {
+  position:absolute; top:3px; left:3px;
+  width:18px; height:18px; border-radius:50%;
+  background:white; box-shadow:0 1px 4px rgba(0,0,0,0.2);
+  transition:left 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.toggle.on .toggle-dot { left:21px; }
+.pg-label { font-size:13px; font-weight:500; color:var(--ink); }
+.pg-sub   { font-size:11px; color:var(--ink-soft); margin-top:1px; }
+
+.config-body { display:grid; grid-template-columns:260px 1fr; }
+.config-nav {
+  border-right:1px solid var(--border-soft);
+  padding:28px 0; background:var(--cream);
+}
+.config-nav-lbl {
+  font-size:9px; letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--ink-soft); padding:4px 24px 10px; font-weight:600;
+}
+.cnav-item {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 24px; cursor:pointer; font-size:13px; color:var(--ink-soft);
+  border-left:3px solid transparent; transition:all 0.15s;
+}
+.cnav-item:hover { background:var(--green-mist); color:var(--ink); }
+.cnav-item.active { background:var(--green-pale); color:var(--green-dark); border-left-color:var(--green); font-weight:500; }
+.cnav-count { font-size:10px; background:var(--green-mist); color:var(--green); padding:2px 7px; border-radius:10px; }
+.cnav-divider { height:1px; background:var(--border-soft); margin:12px 0; }
+.step-row {
+  display:flex; align-items:center; gap:10px;
+  padding:10px 24px; cursor:pointer; font-size:12px; color:var(--ink-soft); transition:all 0.15s;
+}
+.step-row:hover { color:var(--ink); }
+.step-row.active { color:var(--ink); font-weight:500; }
+.step-dot {
+  width:20px; height:20px; border-radius:50%;
+  border:1.5px solid var(--border);
+  display:grid; place-items:center; font-size:9px; color:var(--ink-soft); flex-shrink:0;
+  transition:all 0.2s;
+}
+.step-row.active .step-dot { border-color:var(--green); color:var(--green); background:var(--green-pale); }
+.step-row.done  .step-dot { border-color:var(--green); background:var(--green); color:white; }
+.config-main { padding:48px 40px; max-width:960px; margin:0 auto; }
+
+/* Tab strip — centered */
+.tab-strip {
+  display:flex; justify-content:center; flex-wrap:wrap;
+  border-bottom:1.5px solid var(--border); margin-bottom:36px;
+}
+.tab {
+  padding:14px 20px; font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--ink-soft); cursor:pointer;
+  border-bottom:2px solid transparent; margin-bottom:-1.5px; transition:all 0.2s; white-space:nowrap;
+}
+.tab:hover { color:var(--ink); }
+.tab.active { color:var(--green-dark); border-bottom-color:var(--green); }
+.panel { display:none; }
+.panel.active { display:block; animation:fadeIn 0.25s ease; }
+.panel-body { width:100%; max-width:860px; margin:0 auto; }
+
+/* Product selection grid in configurator */
+.cfg-prod-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:24px; }
+.cfg-card {
+  border:1.5px solid var(--border); border-radius:var(--radius);
+  cursor:pointer; overflow:hidden; transition:all 0.25s;
+}
+.cfg-card:hover { border-color:var(--green-light); box-shadow:0 4px 16px rgba(74,103,65,0.1); }
+.cfg-card.sel  { border-color:var(--green); box-shadow:0 0 0 3px rgba(74,103,65,0.1); }
+.cfg-img {
+  aspect-ratio:4/3; background:var(--green-mist); overflow:hidden; position:relative;
+  display:flex; align-items:center; justify-content:center;
+  border-bottom:1px solid var(--border-soft);
+}
+/*
+  PLACEHOLDER IMAGES for configurator style cards
+  Replace src with actual product images, same as product grid above
+*/
+.cfg-img img { width:100%; height:100%; object-fit:cover; }
+.check-badge {
+  position:absolute; top:8px; right:8px;
+  width:22px; height:22px; border-radius:50%;
+  background:var(--green); color:white;
+  display:none; place-items:center; font-size:11px; font-weight:700;
+}
+.cfg-card.sel .check-badge { display:grid; }
+.cfg-info { padding:12px 14px; }
+.cfg-name { font-size:13px; font-weight:500; }
+.cfg-desc { font-size:11px; color:var(--ink-soft); margin-top:2px; line-height:1.5; }
+.cfg-tag  {
+  display:inline-block; font-size:9px; letter-spacing:0.1em; text-transform:uppercase;
+  padding:2px 8px; border-radius:2px; background:var(--green-pale); color:var(--green); margin-top:6px;
+}
+
+/* Material cards */
+.mat-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px; }
+.mat-card {
+  border:1.5px solid var(--border); border-radius:var(--radius);
+  display:flex; align-items:center; gap:14px; padding:14px 18px;
+  cursor:pointer; transition:all 0.2s;
+}
+.mat-card:hover { border-color:var(--green-light); }
+.mat-card.sel  { border-color:var(--green); background:var(--green-mist); }
+.mat-swatch { width:42px; height:42px; border-radius:50%; flex-shrink:0; border:2px solid rgba(0,0,0,0.07); }
+.mat-name { font-size:13px; font-weight:500; }
+.mat-desc { font-size:11px; color:var(--ink-soft); margin-top:1px; }
+
+/* Swatch row */
+.swatch-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
+.swatch { display:flex; flex-direction:column; align-items:center; gap:5px; cursor:pointer; }
+.swatch-c {
+  width:42px; height:42px; border-radius:50%;
+  border:2px solid transparent; box-shadow:0 2px 8px rgba(0,0,0,0.1); transition:all 0.2s;
+}
+.swatch.active .swatch-c { border-color:var(--green); outline:3px solid rgba(74,103,65,0.18); outline-offset:1px; }
+.swatch-lbl { font-size:9px; color:var(--ink-soft); text-align:center; line-height:1.3; }
+
+/* Size buttons */
+.size-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+.sz-btn {
+  padding:11px 18px; border:1.5px solid var(--border); background:var(--white);
+  border-radius:var(--radius-sm); cursor:pointer;
+  font-family:'Mulish', sans-serif; font-size:12px; color:var(--ink-soft);
+  transition:all 0.2s; text-align:center; line-height:1.4;
+}
+.sz-btn:hover { border-color:var(--green-light); color:var(--ink); }
+.sz-btn.active { border-color:var(--green); color:var(--green-dark); background:var(--green-mist); font-weight:500; }
+
+/* Form elements */
+.form-block { margin-bottom:18px; }
+.fl  { display:block; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:6px; }
+.fi  {
+  width:100%; padding:12px 14px; border:1.5px solid var(--border);
+  border-radius:var(--radius-sm); background:var(--white);
+  font-family:'Mulish', sans-serif; font-size:14px; font-weight:300; color:var(--ink);
+  outline:none; transition:border-color 0.2s;
+}
+.fi:focus { border-color:var(--green); }
+.fi-sel {
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6' fill='%234A6741'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 14px center; cursor:pointer;
+}
+.form-row2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+
+/* live preview */
+.preview-box {
+  border:1.5px solid var(--border); border-radius:var(--radius);
+  background:var(--green-mist); padding:32px; text-align:center; margin:20px 0; max-width:420px;
+}
+.preview-lbl { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:18px; }
+.preview-plaque {
+  display:inline-block; background:var(--green-dark);
+  border-radius:4px; padding:18px 44px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.22);
+}
+.preview-num { font-family:'Playfair Display', serif; font-size:38px; color:#C9A060; letter-spacing:0.1em; line-height:1; }
+.preview-street { font-size:11px; letter-spacing:0.2em; color:rgba(244,240,234,0.55); text-transform:uppercase; margin-top:4px; }
+.preview-caption { font-size:11px; color:var(--ink-soft); margin-top:14px; }
+
+/* Add-ons */
+.addon {
+  display:flex; align-items:center; gap:12px; padding:13px 16px;
+  border:1.5px solid var(--border); border-radius:var(--radius-sm);
+  cursor:pointer; transition:border-color 0.2s; margin-bottom:10px;
+}
+.addon:hover { border-color:var(--green-light); }
+.addon input[type=checkbox] { accent-color:var(--green); width:15px; height:15px; }
+.addon-text { font-size:13px; color:var(--ink); flex:1; }
+.addon-price { font-size:12px; color:var(--green); font-weight:500; }
+
+/* Quote panel */
+.quote-outer { display:grid; grid-template-columns:1fr 1.1fr; gap:36px; align-items:start; }
+.quote-box { border:1.5px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+.quote-head { background:var(--green-dark); padding:22px 26px; font-family:'Playfair Display', serif; font-size:18px; color:var(--cream); }
+.quote-body { padding:0 26px; }
+.q-row {
+  display:flex; justify-content:space-between; align-items:flex-start;
+  padding:12px 0; border-bottom:1px solid var(--border-soft); font-size:13px;
+}
+.q-key { color:var(--ink-soft); }
+.q-val { color:var(--ink); text-align:right; }
+.quote-foot { padding:18px 26px; background:var(--cream); }
+.q-total { display:flex; justify-content:space-between; align-items:flex-end; }
+.q-total-label { font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:var(--ink-soft); }
+.q-price { font-family:'Playfair Display', serif; font-size:32px; color:var(--green-dark); }
+.q-price.locked { font-size:13px; font-family:'Mulish', sans-serif; color:var(--ink-soft); }
+.q-note { font-size:11px; color:var(--ink-soft); margin-top:10px; line-height:1.7; }
+.q-privacy { display:flex; align-items:center; gap:8px; font-size:11px; color:var(--green); margin-top:10px; font-weight:500; }
+
+/* Request form */
+.req-form { background:var(--white); border:1.5px solid var(--border); border-radius:var(--radius); padding:32px; }
+.req-form-title { font-family:'Playfair Display', serif; font-size:20px; margin-bottom:24px; color:var(--ink); }
+.form-submit {
+  width:100%; padding:15px; background:var(--green); color:var(--white);
+  border:none; border-radius:var(--radius-sm); cursor:pointer;
+  font-family:'Mulish', sans-serif; font-size:12px; font-weight:600;
+  letter-spacing:0.12em; text-transform:uppercase; margin-top:6px; transition:all 0.25s;
+}
+.form-submit:hover { background:var(--green-dark); }
+
+/* Selection summary bar */
+.sel-bar {
+  display:flex; justify-content:space-between; align-items:center;
+  background:var(--green-pale); border:1px solid var(--border);
+  border-radius:var(--radius-sm); padding:13px 16px;
+  margin-top:24px; font-size:12px;
+}
+.sel-bar strong { color:var(--ink); }
+.sel-bar span   { color:var(--ink-soft); }
+.next-link { font-size:12px; color:var(--green); cursor:pointer; font-weight:600; white-space:nowrap; }
+.next-link:hover { color:var(--green-dark); }
+
+/* ============================================================
+   PROCESS STEPS
+   ============================================================ */
+.process-grid {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+  background:var(--border); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden;
+  margin-top:52px;
+}
+.proc-step { background:var(--green-mist); padding:36px 28px; }
+.proc-num  {
+  font-family:'Playfair Display', serif; font-size:44px;
+  color:var(--green); opacity:0.2; line-height:1; margin-bottom:20px;
+}
+.proc-title { font-size:14px; font-weight:600; margin-bottom:8px; }
+.proc-desc  { font-size:12px; color:var(--ink-soft); line-height:1.75; }
+
+/* ============================================================
+   BENEFITS GRID
+   ============================================================ */
+.benefits-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:1px;
+  background:var(--border); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden;
+  margin-top:52px;
+}
+.benefit { background:var(--white); padding:36px 32px; transition:background 0.2s; }
+.benefit:hover { background:var(--green-mist); }
+.benefit-icon  { font-size:26px; margin-bottom:14px; }
+.benefit-title { font-size:14px; font-weight:600; margin-bottom:7px; }
+.benefit-desc  { font-size:13px; color:var(--ink-soft); line-height:1.75; }
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:48px; }
+.testimonial {
+  border:1.5px solid var(--border); border-radius:var(--radius); padding:28px;
+  background:var(--white); transition:all 0.2s;
+}
+.testimonial:hover { border-color:var(--green-light); }
+.t-stars { color:var(--green); font-size:14px; margin-bottom:12px; letter-spacing:2px; }
+.t-quote { font-size:14px; color:var(--ink); line-height:1.75; font-style:italic; margin-bottom:18px; }
+.t-author { display:flex; align-items:center; gap:12px; }
+/*
+  PLACEHOLDER — dealer avatar photos
+  Replace src with actual dealer headshots or company logos
+  Size: 48×48px, square or circular crop
+*/
+.t-avatar { width:44px; height:44px; border-radius:50%; overflow:hidden; background:var(--green-pale); }
+.t-avatar img { width:100%; height:100%; object-fit:cover; }
+.t-name    { font-size:13px; font-weight:600; }
+.t-company { font-size:11px; color:var(--ink-soft); }
+
+/* ============================================================
+   DEALER APPLICATION FORM
+   ============================================================ */
+.apply-grid {
+  display:grid; grid-template-columns:1fr 1.2fr; gap:72px; align-items:start; margin-top:56px;
+}
+.apply-form {
+  background:var(--white); border:1.5px solid var(--border);
+  border-radius:var(--radius); padding:44px;
+}
+.apply-form-title { font-family:'Playfair Display', serif; font-size:24px; margin-bottom:28px; }
+
+/* ============================================================
+   CTA STRIP + FOOTER
+   ============================================================ */
+.cta-strip {
+  background:var(--green); padding:48px 64px;
+  display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;
+}
+.cta-strip-text { font-family:'Playfair Display', serif; font-size:26px; color:var(--cream); }
+.cta-strip-text em { font-style:italic; }
+.cta-strip-btn {
+  padding:14px 32px; background:var(--cream); color:var(--green-dark);
+  border:none; border-radius:var(--radius-sm); cursor:pointer;
+  font-family:'Mulish', sans-serif; font-size:12px; font-weight:600;
+  letter-spacing:0.1em; text-transform:uppercase; white-space:nowrap; transition:all 0.2s;
+}
+.cta-strip-btn:hover { background:var(--white); }
+footer {
+  background:var(--green-deep); padding:40px 64px;
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;
+}
+.footer-logo { font-family:'Playfair Display', serif; font-size:16px; color:var(--cream); letter-spacing:0.04em; }
+.footer-sub  { font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(244,247,243,0.4); margin-top:3px; }
+.footer-links { display:flex; gap:24px; }
+.footer-links a { font-size:12px; color:rgba(244,247,243,0.5); text-decoration:none; transition:color 0.2s; }
+.footer-links a:hover { color:rgba(244,247,243,0.9); }
+.footer-copy { font-size:11px; color:rgba(244,247,243,0.3); }
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:var(--cream); }
+::-webkit-scrollbar-thumb { background:var(--green-light); border-radius:2px; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width:1100px) {
+  .hero { grid-template-columns:1fr; }
+  .hero-cards { display:none; }
+  .about-grid { grid-template-columns:1fr; }
+  .product-grid-4 { grid-template-columns:repeat(2,1fr); }
+  .config-body { grid-template-columns:1fr; }
+  .config-nav { border-right:none; border-bottom:1px solid var(--border-soft); }
+  .cfg-prod-grid { grid-template-columns:repeat(2,1fr); }
+  .process-grid { grid-template-columns:repeat(2,1fr); }
+  .testimonials-grid { grid-template-columns:1fr 1fr; }
+  .benefits-grid { grid-template-columns:1fr 1fr; }
+  .apply-grid { grid-template-columns:1fr; }
+  .quote-outer { grid-template-columns:1fr; }
+}
+@media(max-width:768px) {
+  .sec, .config-top, .config-main, footer, .cta-strip { padding-left:20px; padding-right:20px; }
+  nav { padding:0 20px; }
+  .nav-links { display:none; }
+  .top-bar { padding:6px 20px; }
+  .top-bar-links { display:none; }
+  .hero-content { padding:80px 20px 60px; }
+  .product-grid-4 { grid-template-columns:1fr 1fr; }
+  .process-grid, .benefits-grid { grid-template-columns:1fr; }
+  .testimonials-grid { grid-template-columns:1fr; }
+  .cta-strip { flex-direction:column; text-align:center; }
+  .pillars { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:480px) {
+  .hero h1 { font-size:32px; }
+  .product-grid-4 { grid-template-columns:1fr; }
+  .cfg-prod-grid { grid-template-columns:1fr; }
+  .mat-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOP BAR
+     ============================================================ -->
+<div class="top-bar">
+  <div class="top-bar-links">
+    <!--<a href="#">About Us</a>
+    <a href="#">Products</a>
+    <a href="#">Gallery</a>
+    <a href="#">Services</a>-->
+  </div>
+  <div class="top-bar-phone">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.16 1.18 2 2 0 012.13 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+    Contact Us: 1-800-436-1647
+  </div>
+</div>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav id="mainNav">
+  <div class="nav-logo-wrap">
+    <div class="nav-logo-name">Addresses of Distinction</div>
+    <div class="nav-logo-sub">Mailboxes + Street Signs · Built to Last</div>
+  </div>
+  <div class="nav-links">
+    <!--<a href="#">About</a>
+    <a href="#">Products</a>
+    <a href="#" class="active">Become a Dealer</a>
+    <a href="#">Gallery</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>-->
+    <!-- DEALER LOGIN BUTTON -->
+    <button class="nav-login" onclick="window.location='#dealer-login'">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+      Dealer Login
+    </button>
+    <button class="nav-apply" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">
+      Apply Now
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<div class="hero">
+  <!-- 
+    ★ REPLACE THIS IMAGE ★
+    Current: Picsum placeholder (residential neighborhood)
+    Your image: Aerial or wide shot of beautiful community with AOD mailboxes/signs installed
+    Recommended size: 1920×1080px, JPG
+    Replace the src below:
+  -->
+  <div class="hero-img-wrap">
+    <img src="https://d9hhrg4mnvzow.cloudfront.net/dealers.addressesofdistinction.com/aod-become-a-dealer/f8a01a3b-4everproduct-stop-w-decor-street-home-slider-1600x682px_1000000000000000000028.jpg" alt="Beautiful residential community with premium AOD mailbox and sign systems installed">
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">Wholesale Dealer Program</div>
+    <h1>High-Quality, Durable<br>Mailbox &amp; <em>Sign Systems</em></h1>
+    <p class="hero-sub">Become a wholesale partner and grow your business with industry-leading margins, protected territories, and world-class customer support.</p>
+    <div class="hero-actions">
+      <button class="btn-solid" onclick="document.getElementById('configurator').scrollIntoView({behavior:'smooth'})">Configure &amp; Get a Quote</button>
+      <button class="btn-outline" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">Become a Dealer</button>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hstat-num">100K+</div>
+        <div class="hstat-lbl">Installs Completed</div>
+      </div>
+      <div>
+        <div class="hstat-num">25+ Yrs</div>
+        <div class="hstat-lbl">In Business</div>
+      </div>
+      <div>
+        <div class="hstat-num">38%</div>
+        <div class="hstat-lbl">Avg Dealer Margin</div>
+      </div>
+      <div>
+        <div class="hstat-num">1–2 Day</div>
+        <div class="hstat-lbl">Lead Times</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-cards">
+    <div class="hcard">
+      <div class="hcard-icon">💰</div>
+      <div>
+        <div class="hcard-title">Wholesale Pricing</div>
+        <div class="hcard-desc">Deep discounts at all volume levels. Designed to make dealers maximally profitable on every order.</div>
+      </div>
+    </div>
+    <div class="hcard">
+      <div class="hcard-icon">🚚</div>
+      <div>
+        <div class="hcard-title">Reliable &amp; Prompt Shipping</div>
+        <div class="hcard-desc">98% of orders ship same day. Our system will impress your customers.</div>
+      </div>
+    </div>
+    <div class="hcard">
+      <div class="hcard-icon">📦</div>
+      <div>
+        <div class="hcard-title">Easy to Use Products</div>
+        <div class="hcard-desc">Assembly is a breeze. Easy to use tools save you time, saving you money.</div>
+      </div>
+    </div>
+    <div class="hcard">
+      <div class="hcard-icon">🌟</div>
+      <div>
+        <div class="hcard-title">World Class Customer Service</div>
+        <div class="hcard-desc">Experienced team available to assist via phone, chat, or email.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     VALUE PILLARS
+     ============================================================ -->
+<div class="pillars">
+  <div class="pillar">
+    <div class="pillar-icon">💰</div>
+    <div class="pillar-title">Wholesale Pricing</div>
+    <div class="pillar-desc">Deep discounts at all volume levels to make dealers maximally profitable.</div>
+  </div>
+  <div class="pillar">
+    <div class="pillar-icon">🚚</div>
+    <div class="pillar-title">Reliable &amp; Prompt Shipping</div>
+    <div class="pillar-desc">98% of orders ship same day. Our system impresses every customer.</div>
+  </div>
+  <div class="pillar">
+    <div class="pillar-icon">📦</div>
+    <div class="pillar-title">Easy to Use Products</div>
+    <div class="pillar-desc">Assembly is a breeze. Easy tools save you time, saving you money.</div>
+  </div>
+  <div class="pillar">
+    <div class="pillar-icon">🌟</div>
+    <div class="pillar-title">World Class Customer Service</div>
+    <div class="pillar-desc">Experienced team available via phone, chat, or email — always.</div>
+  </div>
+</div>
+
+<!-- ============================================================
+     ABOUT / STORY
+     ============================================================ -->
+<section class="sec bg-white">
+  <div class="about-grid">
+    <div class="about-img-wrap">
+      <!-- 
+        ★ REPLACE THIS IMAGE ★
+        Current: Picsum placeholder (outdoor/green scene)
+        Your image: Job site photo — installers working, or a finished community entrance
+        Recommended: The kind of photo on your existing dealer page (installers at work)
+        Size: 800×600px, JPG
+      -->
+      <img src="https://addressesofdistinction.com/product_images/uploaded_images/message-center-portfolio.jpg" alt="AOD team installing premium mailbox and sign systems at a residential community">
+      <div class="about-img-badge">
+        <strong>100,000+</strong>
+        Installs Completed
+      </div>
+    </div>
+
+    <div class="about-body">
+      <div class="eyebrow">Innovation · Quality · Customer Service · Short Lead Times</div>
+      <h2 class="section-h">Built on a foundation of<br><em>trust and craftsmanship.</em></h2>
+      <p class="section-p">Addresses of Distinction was founded in response to complaints from various builders and homeowners about the difficulty of finding a quality mailbox for their homes. For over 25 years we have been a leading manufacturer of decorative mailboxes and sign systems. During that time we have sold hundreds of thousands of units — our goal is to make businesses successful.</p>
+      <p class="section-p" style="margin-top:12px;">Addresses of Distinction is a great resource whether you need full systems or individual components. We use high-quality castings with a Tiger-Dry to powder coat finish. We offer competitively wholesale pricing — 25% lower than the competition, 1–2 day lead times on our products, and have 80,000 square feet of inventory ready to ship.</p>
+      <div class="about-list">
+        <div class="about-item">
+          <div class="about-dot"></div>
+          <div>
+            <div class="about-item-title">Innovation</div>
+            <div class="about-item-desc">We innovate to listen to our customers to ensure we develop new products we know have been on line.</div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-dot"></div>
+          <div>
+            <div class="about-item-title">Quality</div>
+            <div class="about-item-desc">Our products are crafted from the highest quality materials using time-tested manufacturing. We are dedicated to always providing the finest product at the most affordable price.</div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-dot"></div>
+          <div>
+            <div class="about-item-title">Customer Service</div>
+            <div class="about-item-desc">Our team is there to listen to you before and after the sale. We dissatisfy this to all requests and treat our customers with the utmost respect.</div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-dot"></div>
+          <div>
+            <div class="about-item-title">Short Lead Times</div>
+            <div class="about-item-desc">A key requirement of our company is lead time. Our team understands the importance of maintaining your schedule and the quality of our products same day.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MAILBOX SYSTEMS
+     ============================================================ -->
+<section class="sec bg-mist">
+  <div class="product-sec-header">
+    <div class="eyebrow" style="justify-content:center;">Product Line</div>
+    <h2 class="section-h" style="text-align:center;">Mailbox Systems</h2>
+    <p class="section-p" style="text-align:center;">Our mailbox systems are built to last. Choose from over pre-built options, or customize one to meet your client's needs. All of our mailboxes feature bolt-together construction, which means replacement is easy!</p>
+  </div>
+
+  <div class="product-grid-4">
+    <div class="prod-card">
+      <div class="prod-img">
+        <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/279/2945/AOD_MB_Oak_LRG_2-Post_04__69953.1751307966.png" alt="Oak Mailbox System">
+      </div>
+      <div class="prod-info">
+        <div class="prod-name">Oak Mailbox System</div>
+        <div class="prod-sub">Traditional design made from rust-free aluminum, powder coated in a rich black finish. Built to grace your home for years to come.</div>
+        <div class="prod-tag">Best Seller</div>
+        <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;">Dealer: From $89 &nbsp;·&nbsp; MSRP From $149</div>
+      </div>
+    </div>
+
+    <div class="prod-card">
+      <div class="prod-img">
+        <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/1167/2782/AOD_MB_WB211_05__21555.1729078332.png" alt="Williamsburg Mailbox System">
+      </div>
+      <div class="prod-info">
+        <div class="prod-name">Williamsburg Mailbox System</div>
+        <div class="prod-sub">One of our most distinctive options. Sturdy cast aluminum construction that stands the test of time.</div>
+        <div class="prod-tag">Most Popular</div>
+        <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;">Dealer: From $109 &nbsp;·&nbsp; MSRP From $179</div>
+      </div>
+    </div>
+
+    <div class="prod-card">
+      <div class="prod-img">
+        <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/327/1803/MB-CHDS-02__22891.1703219375.png" alt="Charleston Duplex Mailbox System">
+      </div>
+      <div class="prod-info">
+        <div class="prod-name">Charleston Duplex System</div>
+        <div class="prod-sub">Our most popular model. Classic decorative bracket, pineapple finial, and Corinthian base.</div>
+        <div class="prod-tag">Community Favorite</div>
+        <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;">Dealer: From $129 &nbsp;·&nbsp; MSRP From $219</div>
+      </div>
+    </div>
+
+    <div class="prod-card">
+      <div class="prod-img">
+        <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/731/1829/MB-AUDE-02__02166.1706839878.png" alt="Augustine Duplex Mailbox and Post System">
+      </div>
+      <div class="prod-info">
+        <div class="prod-name">Augustine Duplex System</div>
+        <div class="prod-sub">One of our most distinctive duplex mailboxes. Perfect for multi-unit residential properties.</div>
+        <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;">Dealer: From $149 &nbsp;·&nbsp; MSRP From $249</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="prod-cta-row">
+    <button class="btn-solid" onclick="document.getElementById('configurator').scrollIntoView({behavior:'smooth'})">Configure &amp; Get a Quote →</button>
+  </div>
+</section>
+
+<!-- ============================================================
+     SIGN SYSTEMS
+     ============================================================ -->
+<section class="sec bg-white">
+  <div class="product-sec-header">
+    <div class="eyebrow" style="justify-content:center;">Product Line</div>
+    <h2 class="section-h" style="text-align:center;">Sign Systems</h2>
+    <p class="section-p" style="text-align:center;">Our Community Signs are designed to be long-lasting, affordable, and attractive. These systems utilize quality materials and workmanship to insure a product of which any community can be proud. We use high-grade aluminum alloys and finish them with an industrial-grade powder coating to withstand the elements.</p>
+  </div>
+
+  <div class="product-grid-4">
+    <div class="prod-card">
+      <div class="prod-img">
+        <img src="https://addressesofdistinction.com/product_images/uploaded_images/message-center-portfolio.jpg" alt="Outdoor Message Centers">
+      </div>
+      <div class="prod-info">
+        <div class="prod-name">Outdoor Message Centers</div>
+        <div class="prod-sub">Durable aluminum message centers for communities. Custom sizing and powder-coat colors available.</div>
+        <div class="prod-tag">Volume Ready</div>
+        <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;">Dealer: From $199 &nbsp;·&nbsp; MSRP From $329</div>
+      </div>
+    </div>
+
+    <div class="prod-card">
+      <div class="prod-img">
+        <img src="https://addressesofdistinction.com/product_images/uploaded_images/custom-signs.jpg" alt="Custom Community Signs">
+      </div>
+      <div class="prod-info">
+        <div class="prod-name">Custom Community Signs</div>
+        <div class="prod-sub">Complete custom sign systems for stop, directional, and street signage. HOA and municipality approved.</div>
+        <div class="prod-tag">HOA Favorite</div>
+        <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;">Dealer: From $79 &nbsp;·&nbsp; MSRP From $129</div>
+      </div>
+    </div>
+
+    <div class="prod-card">
+      <div class="prod-img">
+        <img src="https://addressesofdistinction.com/product_images/uploaded_images/directional-signage.jpg" alt="Directional Signage">
+      </div>
+      <div class="prod-info">
+        <div class="prod-name">Directional Signage</div>
+        <div class="prod-sub">Grand entry and wayfinding signs with decorative post and cap systems. The crown jewel of any community.</div>
+        <div class="prod-tag">Premium</div>
+        <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;">Dealer: From $249 &nbsp;·&nbsp; MSRP From $419</div>
+      </div>
+    </div>
+
+    <div class="prod-card">
+      <div class="prod-img">
+        <img src="https://addressesofdistinction.com/product_images/uploaded_images/hanging-signs.jpg" alt="Hanging Signs">
+      </div>
+      <div class="prod-info">
+        <div class="prod-name">Hanging Signs</div>
+        <div class="prod-sub">Decorative hanging sign systems for community entrances, HOA amenities, and commercial properties.</div>
+        <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:8px;">Dealer: From $159 &nbsp;·&nbsp; MSRP From $269</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="prod-cta-row">
+    <button class="btn-solid" onclick="document.getElementById('configurator').scrollIntoView({behavior:'smooth'})">Configure &amp; Get a Quote →</button>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTERACTIVE CONFIGURATOR
+     Redesigned: Step 1 = Category, Step 2 = Style, etc.
+     Sidebar removed — steps shown as tabs only (cleaner flow)
+     ============================================================ -->
+<div class="config-wrap" id="configurator">
+  <div class="config-top">
+    <div class="config-top-inner">
+      <div class="eyebrow">Interactive Product Builder</div>
+      <h2 class="section-h">Configure your order.<br><em>Get dealer pricing instantly.</em></h2>
+      <div class="progress-bar"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+    <div class="price-guard" id="priceGuard" onclick="togglePrice()">
+      <div class="toggle" id="tog"><div class="toggle-dot"></div></div>
+      <div>
+        <div class="pg-label">Show Dealer Pricing</div>
+        <div class="pg-sub">Hidden from retail visitors &amp; competitors</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step nav — centered -->
+  <div style="background:var(--cream);border-bottom:1px solid var(--border);overflow-x:auto;">
+    <div class="tab-strip" style="margin-bottom:0;border-bottom:none;padding:0 20px;">
+      <div class="tab active" id="t1" onclick="setTab(1)">1 · Category</div>
+      <div class="tab" id="t2" onclick="setTab(2)">2 · Style</div>
+      <div class="tab" id="t3" onclick="setTab(3)">3 · Material &amp; Finish</div>
+      <div class="tab" id="t4" onclick="setTab(4)">4 · Size</div>
+      <div class="tab" id="t5" onclick="setTab(5)">5 · Personalize</div>
+      <div class="tab" id="t6" onclick="setTab(6)">6 · Quote</div>
+    </div>
+  </div>
+
+  <div class="config-main">
+
+    <!-- PANEL 1: Category -->
+    <div class="panel active" id="p1">
+      <div class="eyebrow">Step 1 of 6</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:6px;">What are you quoting?</h3>
+      <p style="font-size:13px;color:var(--ink-soft);margin-bottom:28px;">Choose the product category to begin. You can build quotes for multiple categories.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:800px;">
+        <!-- Category: Mailbox Systems -->
+        <div class="cfg-card sel" id="catMailbox" onclick="pickCategory(this,'Mailbox Systems','mailbox')" style="cursor:pointer;">
+          <div class="cfg-img" style="aspect-ratio:unset;padding:32px 20px;flex-direction:column;gap:12px;min-height:180px;">
+            <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/279/2945/AOD_MB_Oak_LRG_2-Post_04__69953.1751307966.png" alt="Mailbox Systems" style="height:110px;width:auto;object-fit:contain;margin:0 auto;">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Mailbox Systems</div>
+            <div class="cfg-desc">Residential, duplex, estate &amp; community mailbox systems. 14 styles.</div>
+            <div class="cfg-tag">Most Popular</div>
+          </div>
+        </div>
+
+        <!-- Category: Street Signs -->
+        <div class="cfg-card" id="catStreet" onclick="pickCategory(this,'Street Signs','street')" style="cursor:pointer;">
+          <div class="cfg-img" style="aspect-ratio:unset;padding:32px 20px;flex-direction:column;gap:12px;min-height:180px;">
+            <img src="https://addressesofdistinction.com/product_images/uploaded_images/custom-signs.jpg" alt="Street Signs" style="height:110px;width:100%;object-fit:cover;margin:0 auto;border-radius:4px;">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Street Signs</div>
+            <div class="cfg-desc">Custom street blades, regulatory &amp; directional signs. HOA approved.</div>
+          </div>
+        </div>
+
+        <!-- Category: Community Signs -->
+        <div class="cfg-card" id="catCommunity" onclick="pickCategory(this,'Community Signs','community')" style="cursor:pointer;">
+          <div class="cfg-img" style="aspect-ratio:unset;padding:32px 20px;flex-direction:column;gap:12px;min-height:180px;">
+            <img src="https://addressesofdistinction.com/product_images/uploaded_images/message-center-portfolio.jpg" alt="Community Signs" style="height:110px;width:100%;object-fit:cover;margin:0 auto;border-radius:4px;">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Community Signs</div>
+            <div class="cfg-desc">Message centers, hanging signs, entrance monuments, &amp; more.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sel-bar" style="margin-top:28px;max-width:800px;">
+        <span>Category: <strong id="catName">Mailbox Systems</strong></span>
+        <span class="next-link" onclick="setTab(2)">Next: Choose Style →</span>
+      </div>
+    </div>
+
+    <!-- PANEL 2: Style (context-aware: shows mailbox styles by default) -->
+    <div class="panel" id="p2">
+      <div class="eyebrow">Step 2 of 6</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:4px;" id="styleHeading">Choose Your Mailbox Style</h3>
+      <p style="font-size:13px;color:var(--ink-soft);margin-bottom:0;">Select a style — clicking advances you to material selection.</p>
+
+      <!-- Mailbox styles -->
+      <div class="cfg-prod-grid" id="stylesMailbox">
+        <div class="cfg-card sel" onclick="pickStyle(this,'Oak Mailbox System','$89–$149 dealer')">
+          <div class="cfg-img">
+            <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/279/2945/AOD_MB_Oak_LRG_2-Post_04__69953.1751307966.png" alt="Oak Mailbox System">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Oak Mailbox System</div>
+            <div class="cfg-desc">Traditional rust-free aluminum. Powder-coated black finish. Classic post design.</div>
+            <div style="font-size:11px;color:var(--green);font-weight:600;margin-top:5px;">Dealer From $89</div>
+            <div class="cfg-tag">Best Seller</div>
+          </div>
+        </div>
+        <div class="cfg-card" onclick="pickStyle(this,'Williamsburg Mailbox System','$109–$179 dealer')">
+          <div class="cfg-img">
+            <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/1167/2782/AOD_MB_WB211_05__21555.1729078332.png" alt="Williamsburg Mailbox">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Williamsburg System</div>
+            <div class="cfg-desc">Distinctive cast aluminum construction. Time-tested design.</div>
+            <div style="font-size:11px;color:var(--green);font-weight:600;margin-top:5px;">Dealer From $109</div>
+            <div class="cfg-tag">Most Popular</div>
+          </div>
+        </div>
+        <div class="cfg-card" onclick="pickStyle(this,'Charleston Duplex System','$129–$219 dealer')">
+          <div class="cfg-img">
+            <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/327/1803/MB-CHDS-02__22891.1703219375.png" alt="Charleston Duplex System">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Charleston Duplex</div>
+            <div class="cfg-desc">Decorative bracket, pineapple finial, Corinthian base. Most popular community model.</div>
+            <div style="font-size:11px;color:var(--green);font-weight:600;margin-top:5px;">Dealer From $129</div>
+            <div class="cfg-tag">Community Favorite</div>
+          </div>
+        </div>
+        <div class="cfg-card" onclick="pickStyle(this,'Augustine Duplex System','$149–$249 dealer')">
+          <div class="cfg-img">
+            <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/731/1829/MB-AUDE-02__02166.1706839878.png" alt="Augustine Duplex System">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Augustine Duplex</div>
+            <div class="cfg-desc">Distinctive duplex system. Ideal for multi-unit residential builds.</div>
+            <div style="font-size:11px;color:var(--green);font-weight:600;margin-top:5px;">Dealer From $149</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Street sign styles (hidden by default) -->
+      <div class="cfg-prod-grid" id="stylesStreet" style="display:none;">
+        <div class="cfg-card sel" onclick="pickStyle(this,'Custom Street Blade','$79–$129 dealer')">
+          <div class="cfg-img">
+            <img src="https://addressesofdistinction.com/product_images/uploaded_images/custom-signs.jpg" alt="Custom Street Signs">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Custom Street Blade Signs</div>
+            <div class="cfg-desc">High-grade aluminum blades. Custom text and colors. Volume HOA pricing.</div>
+            <div style="font-size:11px;color:var(--green);font-weight:600;margin-top:5px;">Dealer From $79</div>
+            <div class="cfg-tag">HOA Favorite</div>
+          </div>
+        </div>
+        <div class="cfg-card" onclick="pickStyle(this,'Directional Signage','$249–$419 dealer')">
+          <div class="cfg-img">
+            <img src="https://addressesofdistinction.com/product_images/uploaded_images/directional-signage.jpg" alt="Directional Signs">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Directional Signage</div>
+            <div class="cfg-desc">Wayfinding and entry monument signs with decorative post systems.</div>
+            <div style="font-size:11px;color:var(--green);font-weight:600;margin-top:5px;">Dealer From $249</div>
+            <div class="cfg-tag">Premium</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community sign styles (hidden by default) -->
+      <div class="cfg-prod-grid" id="stylesCommunity" style="display:none;">
+        <div class="cfg-card sel" onclick="pickStyle(this,'Outdoor Message Center','$199–$329 dealer')">
+          <div class="cfg-img">
+            <img src="https://addressesofdistinction.com/product_images/uploaded_images/message-center-portfolio.jpg" alt="Message Centers">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Outdoor Message Centers</div>
+            <div class="cfg-desc">Aluminum message centers. Custom sizing. Ideal for HOA announcements.</div>
+            <div style="font-size:11px;color:var(--green);font-weight:600;margin-top:5px;">Dealer From $199</div>
+            <div class="cfg-tag">Volume Ready</div>
+          </div>
+        </div>
+        <div class="cfg-card" onclick="pickStyle(this,'Hanging Signs','$159–$269 dealer')">
+          <div class="cfg-img">
+            <img src="https://addressesofdistinction.com/product_images/uploaded_images/hanging-signs.jpg" alt="Hanging Signs">
+            <div class="check-badge">✓</div>
+          </div>
+          <div class="cfg-info">
+            <div class="cfg-name">Hanging Signs</div>
+            <div class="cfg-desc">Decorative hanging sign systems for community entrances and amenities.</div>
+            <div style="font-size:11px;color:var(--green);font-weight:600;margin-top:5px;">Dealer From $159</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sel-bar" style="margin-top:24px;">
+        <span>Style: <strong id="styleName">Oak Mailbox System</strong></span>
+        <span class="next-link" onclick="setTab(3)">Next: Material &amp; Finish →</span>
+      </div>
+    </div>
+
+    <!-- PANEL 3: Material -->
+    <div class="panel" id="p3">
+      <div class="eyebrow">Step 3 of 6</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:4px;">Material &amp; Finish</h3>
+      <p style="font-size:13px;color:var(--ink-soft);">Select material for durability requirements, then choose your powder-coat color.</p>
+
+      <div class="mat-grid">
+        <div class="mat-card sel" onclick="pickMat(this,'Cast Aluminum')">
+          <div class="mat-swatch" style="background:linear-gradient(135deg,#8B8B8B,#C8C8C8,#787878);"></div>
+          <div><div class="mat-name">Cast Aluminum</div><div class="mat-desc">Rust-proof · 25yr warranty · Lightweight · Residential standard</div></div>
+        </div>
+        <div class="mat-card" onclick="pickMat(this,'Powder-Coated Steel')">
+          <div class="mat-swatch" style="background:linear-gradient(135deg,#5A5A5A,#888,#4A4A4A);"></div>
+          <div><div class="mat-name">Powder-Coated Steel</div><div class="mat-desc">Heavy-duty · Commercial grade · Impact resistant · 20yr warranty</div></div>
+        </div>
+        <div class="mat-card" onclick="pickMat(this,'Solid Bronze')">
+          <div class="mat-swatch" style="background:linear-gradient(135deg,#8B6914,#C9A84C,#7A5C10);"></div>
+          <div><div class="mat-name">Solid Bronze</div><div class="mat-desc">Heirloom-grade · Natural patina · Luxury estates · Premium tier</div></div>
+        </div>
+        <div class="mat-card" onclick="pickMat(this,'Fiberglass Composite')">
+          <div class="mat-swatch" style="background:linear-gradient(135deg,#3D5A40,#5E8A62);"></div>
+          <div><div class="mat-name">Fiberglass Composite</div><div class="mat-desc">Salt-air certified · Coastal markets · Florida &amp; Gulf Coast preferred</div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:28px;">
+        <div style="font-family:'Playfair Display',serif;font-size:18px;margin-bottom:4px;">Color Finish</div>
+        <p style="font-size:12px;color:var(--ink-soft);margin-bottom:0;">Industrial-grade Tiger-Dry powder coat. UV and weather resistant.</p>
+        <div class="swatch-row">
+          <div class="swatch active" onclick="pickColor(this,'Oil-Rubbed Bronze')"><div class="swatch-c" style="background:linear-gradient(135deg,#4A3000,#8B6914);"></div><div class="swatch-lbl">Bronze</div></div>
+          <div class="swatch" onclick="pickColor(this,'Satin Black')"><div class="swatch-c" style="background:#1A1A1A;"></div><div class="swatch-lbl">Satin Black</div></div>
+          <div class="swatch" onclick="pickColor(this,'Antique Nickel')"><div class="swatch-c" style="background:linear-gradient(135deg,#8A8A8A,#C8C8C8);"></div><div class="swatch-lbl">Nickel</div></div>
+          <div class="swatch" onclick="pickColor(this,'Weathered Copper')"><div class="swatch-c" style="background:linear-gradient(135deg,#2E6B5E,#4A9B8A);"></div><div class="swatch-lbl">Copper</div></div>
+          <div class="swatch" onclick="pickColor(this,'Forest Green')"><div class="swatch-c" style="background:#354D2F;"></div><div class="swatch-lbl">Forest Green</div></div>
+          <div class="swatch" onclick="pickColor(this,'Gloss White')"><div class="swatch-c" style="background:#F5F5F0;border:1.5px solid #ddd;"></div><div class="swatch-lbl">White</div></div>
+          <div class="swatch" onclick="pickColor(this,'Coastal Navy')"><div class="swatch-c" style="background:#2A4A6B;"></div><div class="swatch-lbl">Navy</div></div>
+          <div class="swatch" onclick="pickColor(this,'Custom RAL')"><div class="swatch-c" style="background:conic-gradient(#D4A017,#4A6741,#2A4A6B,#8B3A3A,#D4A017);"></div><div class="swatch-lbl">Custom</div></div>
+        </div>
+      </div>
+      <div class="sel-bar">
+        <span>Material: <strong id="matName">Cast Aluminum</strong> · Finish: <strong id="colorName">Oil-Rubbed Bronze</strong></span>
+        <span class="next-link" onclick="setTab(4)">Next: Size →</span>
+      </div>
+    </div>
+
+    <!-- PANEL 4: Size -->
+    <div class="panel" id="p4">
+      <div class="eyebrow">Step 4 of 6</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:4px;">Size &amp; Capacity</h3>
+      <p style="font-size:13px;color:var(--ink-soft);">Select application type, capacity, and post height.</p>
+      <div style="margin-top:24px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px;">Application Type</div>
+        <div class="size-row">
+          <button class="sz-btn active" onclick="pickSz(this)">Residential<br><span style="font-size:10px;opacity:0.7;">Single Family</span></button>
+          <button class="sz-btn" onclick="pickSz(this)">Estate<br><span style="font-size:10px;opacity:0.7;">Large Lot / Gated</span></button>
+          <button class="sz-btn" onclick="pickSz(this)">Multi-Unit<br><span style="font-size:10px;opacity:0.7;">4–12 Units</span></button>
+          <button class="sz-btn" onclick="pickSz(this)">Commercial / HOA<br><span style="font-size:10px;opacity:0.7;">Community / Office</span></button>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px;">Box Capacity</div>
+        <div class="size-row">
+          <button class="sz-btn active" onclick="pickSz(this)">T1 Standard<br><span style="font-size:10px;opacity:0.7;">8" × 11"</span></button>
+          <button class="sz-btn" onclick="pickSz(this)">T2 Large<br><span style="font-size:10px;opacity:0.7;">11" × 14"</span></button>
+          <button class="sz-btn" onclick="pickSz(this)">T3 Parcel+<br><span style="font-size:10px;opacity:0.7;">16" × 20"</span></button>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px;">Post Height</div>
+        <div class="size-row">
+          <button class="sz-btn" onclick="pickSz(this)">36" Low<br><span style="font-size:10px;opacity:0.7;">Standard grade</span></button>
+          <button class="sz-btn active" onclick="pickSz(this)">42" Standard<br><span style="font-size:10px;opacity:0.7;">USPS compliant</span></button>
+          <button class="sz-btn" onclick="pickSz(this)">48" Tall<br><span style="font-size:10px;opacity:0.7;">Estate / raised</span></button>
+        </div>
+      </div>
+      <div class="sel-bar">
+        <span>Size: <strong>Residential · T1 Standard · 42" Post</strong></span>
+        <span class="next-link" onclick="setTab(5)">Next: Personalize →</span>
+      </div>
+    </div>
+
+    <!-- PANEL 5: Personalize -->
+    <div class="panel" id="p5">
+      <div class="eyebrow">Step 5 of 6</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:4px;">Address &amp; Lettering</h3>
+      <p style="font-size:13px;color:var(--ink-soft);">Personalize for your client. Preview updates live below.</p>
+      <div class="form-row2" style="margin-top:20px;max-width:520px;">
+        <div class="form-block"><label class="fl">Address Number</label><input class="fi" placeholder="e.g. 4820" oninput="updatePrev(this.value,null)"></div>
+        <div class="form-block"><label class="fl">Street Name (optional)</label><input class="fi" placeholder="e.g. Magnolia Drive" oninput="updatePrev(null,this.value)"></div>
+        <div class="form-block"><label class="fl">Letter Style</label><select class="fi fi-sel"><option>Classic Serif</option><option>Modern Sans</option><option>Script</option><option>Block Condensed</option></select></div>
+        <div class="form-block"><label class="fl">Letter Finish</label><select class="fi fi-sel"><option>Polished Gold</option><option>Brushed Nickel</option><option>Oil Bronze</option><option>Matte Black</option><option>Painted White</option></select></div>
+      </div>
+      <div class="preview-box">
+        <div class="preview-lbl">Live Lettering Preview</div>
+        <div class="preview-plaque">
+          <div class="preview-num" id="prevNum">4820</div>
+          <div class="preview-street" id="prevStreet">Magnolia Drive</div>
+        </div>
+        <div class="preview-caption" id="prevCaption">Oak Mailbox System · Cast Aluminum · Oil-Rubbed Bronze</div>
+      </div>
+      <div style="font-size:13px;font-weight:500;margin-bottom:10px;">Optional Add-Ons</div>
+      <label class="addon"><input type="checkbox" style="accent-color:var(--green);"> <span class="addon-text">Solar LED accent lighting</span><span class="addon-price">+$24</span></label>
+      <label class="addon"><input type="checkbox" style="accent-color:var(--green);"> <span class="addon-text">Anti-theft anchor kit</span><span class="addon-price">+$18</span></label>
+      <label class="addon"><input type="checkbox" style="accent-color:var(--green);" checked> <span class="addon-text">USPS-approved lock insert</span><span class="addon-price">+$32</span></label>
+      <div class="sel-bar">
+        <span>Personalization configured</span>
+        <span class="next-link" onclick="setTab(6)">Next: Review &amp; Quote →</span>
+      </div>
+    </div>
+
+    <!-- PANEL 6: Quote -->
+    <div class="panel" id="p6">
+      <div class="eyebrow">Step 6 of 6</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:20px;">Review &amp; Request Quote</h3>
+      <div class="quote-outer">
+        <div>
+          <div class="quote-box">
+            <div class="quote-head">Order Configuration Summary</div>
+            <div class="quote-body">
+              <div class="q-row"><span class="q-key">Category</span><span class="q-val" id="qCat">Mailbox Systems</span></div>
+              <div class="q-row"><span class="q-key">Product</span><span class="q-val" id="qStyle">Oak Mailbox System</span></div>
+              <div class="q-row"><span class="q-key">Material</span><span class="q-val" id="qMat">Cast Aluminum</span></div>
+              <div class="q-row"><span class="q-key">Finish</span><span class="q-val" id="qColor">Oil-Rubbed Bronze</span></div>
+              <div class="q-row"><span class="q-key">Application</span><span class="q-val">Residential Standard</span></div>
+              <div class="q-row"><span class="q-key">Capacity / Post</span><span class="q-val">T1 Standard · 42" USPS</span></div>
+              <div class="q-row"><span class="q-key">Address</span><span class="q-val" id="qAddr">4820 Magnolia Drive</span></div>
+              <div class="q-row"><span class="q-key">Add-Ons</span><span class="q-val">USPS Lock Insert</span></div>
+              <div class="q-row" style="border-bottom:none;"><span class="q-key">Quantity</span>
+                <span class="q-val"><select class="fi" style="width:72px;padding:6px;font-size:13px;"><option>1</option><option>5</option><option>10</option><option>25</option><option>50+</option></select></span>
+              </div>
+            </div>
+            <div class="quote-foot">
+              <div class="q-total">
+                <div>
+                  <div class="q-total-label">Dealer Unit Price</div>
+                  <div style="font-size:11px;color:var(--ink-soft);margin-top:3px;" id="priceRange">Est. range: $89 – $149 depending on options</div>
+                </div>
+                <div>
+                  <div class="q-price locked" id="qLocked">🔒 Verified dealers only</div>
+                  <div id="qReveal" style="display:none;text-align:right;">
+                    <div class="q-price">From $89</div>
+                    <div style="font-size:11px;color:var(--ink-soft);margin-top:2px;">MSRP From $149 · Margin: <strong style="color:var(--green);">~40%</strong></div>
+                  </div>
+                </div>
+              </div>
+              <div class="q-note">Volume pricing at 10+ units. White-label at 50+. Drop-ship to job site nationwide. 1–2 day lead times on most in-stock products.</div>
+              <div class="q-privacy">🔐 Exact pricing never shown to retail customers or the public</div>
+            </div>
+          </div>
+        </div>
+        <div class="req-form">
+          <div class="req-form-title">Request this Quote</div>
+          <div class="form-block"><label class="fl">Business Name</label><input class="fi" placeholder="Your company / DBA"></div>
+          <div class="form-row2">
+            <div class="form-block"><label class="fl">First Name</label><input class="fi" placeholder="First"></div>
+            <div class="form-block"><label class="fl">Last Name</label><input class="fi" placeholder="Last"></div>
+          </div>
+          <div class="form-block"><label class="fl">Email</label><input class="fi" type="email" placeholder="you@company.com"></div>
+          <div class="form-block"><label class="fl">Phone</label><input class="fi" type="tel" placeholder="(555) 000-0000"></div>
+          <div class="form-block">
+            <label class="fl">Primary Market / Territory</label>
+            <select class="fi fi-sel"><option>Select your market...</option><option>Florida — Gulf Coast</option><option>Florida — Atlantic</option><option>Texas — DFW</option><option>Texas — Houston</option><option>Southeast</option><option>Northeast</option><option>West Coast</option><option>Midwest</option><option>Other</option></select>
+          </div>
+          <button class="form-submit" onclick="alert('Quote request submitted! A rep will contact you within 2 business hours at 1-800-436-1647.')">Send Quote Request →</button>
+          <div style="font-size:11px;color:var(--ink-soft);margin-top:10px;text-align:center;">Confirmed pricing &amp; availability within 2 business hours.</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.config-main -->
+</div><!-- /.config-wrap -->
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="sec bg-mist">
+  <div class="eyebrow">How It Works</div>
+  <h2 class="section-h">From application to<br><em>first install — in days.</em></h2>
+  <div class="process-grid">
+    <div class="proc-step"><div class="proc-num">01</div><div class="proc-title">Apply Online</div><div class="proc-desc">Submit your dealer application in minutes. No complex contracts. We review and verify within 24 hours.</div></div>
+    <div class="proc-step"><div class="proc-num">02</div><div class="proc-title">Get Verified &amp; Quoted</div><div class="proc-desc">Receive dealer pricing access, your territory assignment, and a dedicated account rep. First order can ship within 48 hours.</div></div>
+    <div class="proc-step"><div class="proc-num">03</div><div class="proc-title">Order &amp; Fulfill</div><div class="proc-desc">1–2 day lead times on most products. Drop-ship direct to job site. 80,000 sq ft of inventory ready to ship now.</div></div>
+    <div class="proc-step"><div class="proc-num">04</div><div class="proc-title">Grow Your Business</div><div class="proc-desc">Build recurring revenue with community contracts. Volume discounts, white-label options, and co-marketing support available.</div></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY DEALERS CHOOSE AOD
+     ============================================================ -->
+<section class="sec bg-white">
+  <div class="eyebrow">Why Dealers Choose AOD</div>
+  <h2 class="section-h">The margin. The product.<br><em>The partnership that scales.</em></h2>
+  <div class="benefits-grid">
+    <div class="benefit"><div class="benefit-icon">💰</div><div class="benefit-title">35–45% Dealer Margins</div><div class="benefit-desc">Industry-leading margins on all product lines. 25% lower pricing than the competition. Volume discounts activate at 10+ units per order.</div></div>
+    <div class="benefit"><div class="benefit-icon">🗺️</div><div class="benefit-title">Protected Territories</div><div class="benefit-desc">Apply for an exclusive zip code cluster. We limit dealer density so you own your market and never compete against another AOD dealer for the same client.</div></div>
+    <div class="benefit"><div class="benefit-icon">🚚</div><div class="benefit-title">1–2 Day Lead Times</div><div class="benefit-desc">98% of orders ship same day from our 80,000 sq ft warehouse. Drop-ship directly to your client's job site anywhere nationwide.</div></div>
+    <div class="benefit"><div class="benefit-icon">🎨</div><div class="benefit-title">White-Label at 50+ Units</div><div class="benefit-desc">Build your own brand on AOD's manufacturing. Offer a proprietary product line to builder clients with zero tooling costs or inventory risk.</div></div>
+    <div class="benefit"><div class="benefit-icon">🤝</div><div class="benefit-title">Dedicated Account Rep</div><div class="benefit-desc">Every dealer gets a named rep with a direct line. Real humans. Call 1-800-436-1647 anytime. Your rep knows your territory and helps close community-scale contracts.</div></div>
+    <div class="benefit"><div class="benefit-icon">🏗️</div><div class="benefit-title">100,000+ Installs Behind You</div><div class="benefit-desc">Sell with confidence. AOD has installed more than 100,000 units in residential communities, HOAs, and commercial properties. The brand speaks for itself.</div></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="sec bg-pale">
+  <div class="eyebrow">Dealer Testimonials</div>
+  <h2 class="section-h">What our dealer partners<br><em>are saying.</em></h2>
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">"AOD has been the easiest supplier relationship I've ever managed. The pricing is real, the shipping is fast, and when I call — a person answers. That's rare."</p>
+      <div class="t-author">
+        <!-- ★ REPLACE avatar image ★ — 48×48px dealer headshot or company logo -->
+        <div class="t-avatar"><img src="https://picsum.photos/seed/dealer1/48/48" alt="Dealer testimonial — replace with real photo"></div>
+        <div><div class="t-name">Mike R.</div><div class="t-company">Landscape Contractor · Atlanta, GA</div></div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">"We've built over 40 communities in the last 5 years using AOD products exclusively. Our homeowners constantly ask about the mailboxes. It's a differentiator for us."</p>
+      <div class="t-author">
+        <!-- ★ REPLACE avatar image ★ -->
+        <div class="t-avatar"><img src="https://picsum.photos/seed/dealer2/48/48" alt="Dealer testimonial — replace with real photo"></div>
+        <div><div class="t-name">Sandra K.</div><div class="t-company">Home Builder / Developer · Tampa, FL</div></div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">"The protected territory model is what sold me. I know my zip codes are mine. The margins let me price competitively and still make great money on every install."</p>
+      <div class="t-author">
+        <!-- ★ REPLACE avatar image ★ -->
+        <div class="t-avatar"><img src="https://picsum.photos/seed/dealer3/48/48" alt="Dealer testimonial — replace with real photo"></div>
+        <div><div class="t-name">James T.</div><div class="t-company">Sign &amp; Graphics Company · Dallas, TX</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DEALER APPLICATION FORM
+     ============================================================ -->
+<section class="sec bg-white" id="apply">
+  <div class="eyebrow">Become a Dealer</div>
+  <h2 class="section-h">Ready to add a premium<br><em>revenue stream?</em></h2>
+  <p class="section-p">No commitment required. We'll review your application and have a rep reach out within one business day to discuss your territory, pricing structure, and first order.</p>
+
+  <div class="apply-grid">
+    <div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;margin-bottom:20px;color:var(--ink);">Who applies to become a dealer?</h3>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border:1px solid var(--border-soft);border-radius:var(--radius-sm);transition:border-color 0.2s;" onmouseenter="this.style.borderColor='var(--green-light)'" onmouseleave="this.style.borderColor='var(--border-soft)'">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:6px;flex-shrink:0;"></div>
+          <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">New Home Builders &amp; Developers</div><div style="font-size:12px;color:var(--ink-soft);line-height:1.7;">Add AOD packages to every lot. Upsell at the model home. Recurring volume with every community build.</div></div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border:1px solid var(--border-soft);border-radius:var(--radius-sm);transition:border-color 0.2s;" onmouseenter="this.style.borderColor='var(--green-light)'" onmouseleave="this.style.borderColor='var(--border-soft)'">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:6px;flex-shrink:0;"></div>
+          <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Landscape Contractors</div><div style="font-size:12px;color:var(--ink-soft);line-height:1.7;">The natural add-on to any curb appeal project. Highest margin item per install hour in your service line.</div></div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border:1px solid var(--border-soft);border-radius:var(--radius-sm);transition:border-color 0.2s;" onmouseenter="this.style.borderColor='var(--green-light)'" onmouseleave="this.style.borderColor='var(--border-soft)'">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:6px;flex-shrink:0;"></div>
+          <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Sign &amp; Graphics Companies</div><div style="font-size:12px;color:var(--ink-soft);line-height:1.7;">Expand from flat signage into dimensional address monuments. Capture the full property identity budget.</div></div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border:1px solid var(--border-soft);border-radius:var(--radius-sm);transition:border-color 0.2s;" onmouseenter="this.style.borderColor='var(--green-light)'" onmouseleave="this.style.borderColor='var(--border-soft)'">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:6px;flex-shrink:0;"></div>
+          <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">HOA Management Companies</div><div style="font-size:12px;color:var(--ink-soft);line-height:1.7;">Standardize community signage and mailboxes across managed properties with private-label options.</div></div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;border:1px solid var(--border-soft);border-radius:var(--radius-sm);transition:border-color 0.2s;" onmouseenter="this.style.borderColor='var(--green-light)'" onmouseleave="this.style.borderColor='var(--border-soft)'">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--green);margin-top:6px;flex-shrink:0;"></div>
+          <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Masonry &amp; Hardscape Installers</div><div style="font-size:12px;color:var(--ink-soft);line-height:1.7;">Match monument signage to your column and brick work. Complete the look. Increase your ticket size.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="apply-form">
+      <div class="apply-form-title">Dealer Application</div>
+      <div class="form-block"><label class="fl">Business Name</label><input class="fi" placeholder="Company / DBA name"></div>
+      <div class="form-row2">
+        <div class="form-block"><label class="fl">First Name</label><input class="fi" placeholder="First"></div>
+        <div class="form-block"><label class="fl">Last Name</label><input class="fi" placeholder="Last"></div>
+      </div>
+      <div class="form-block"><label class="fl">Email Address</label><input class="fi" type="email" placeholder="you@company.com"></div>
+      <div class="form-block"><label class="fl">Phone Number</label><input class="fi" type="tel" placeholder="(555) 000-0000"></div>
+      <div class="form-row2">
+        <div class="form-block">
+          <label class="fl">State</label>
+          <select class="fi fi-sel"><option>Select...</option><option>FL</option><option>TX</option><option>GA</option><option>NC</option><option>SC</option><option>CA</option><option>AZ</option><option>CO</option><option>NY</option><option>Other</option></select>
+        </div>
+        <div class="form-block">
+          <label class="fl">Monthly Volume</label>
+          <select class="fi fi-sel"><option>Est. units/month...</option><option>1–10 units</option><option>10–25 units</option><option>25–50 units</option><option>50–100 units</option><option>100+ units</option></select>
+        </div>
+      </div>
+      <div class="form-block">
+        <label class="fl">Primary Business Type</label>
+        <select class="fi fi-sel"><option>Select your market...</option><option>Home Builder / Developer</option><option>Landscape Contractor</option><option>Sign &amp; Graphics Company</option><option>HOA Management</option><option>Commercial Property Manager</option><option>Masonry / Hardscape</option><option>Retailer / Showroom</option><option>Other</option></select>
+      </div>
+      <div class="form-block">
+        <label class="fl">How did you find us?</label>
+        <select class="fi fi-sel"><option>Select...</option><option>Dealer referral</option><option>Trade show</option><option>Google search</option><option>Social media</option><option>AOD sales rep</option><option>Other</option></select>
+      </div>
+      <!-- 
+        BigCommerce integration note:
+        Connect this form to your BigCommerce dealer registration flow
+        or a third-party form handler (Klaviyo, HubSpot, Formspree, etc.)
+        Update the button onclick or wrap in a <form action=""> tag
+      -->
+      <button class="form-submit" onclick="alert('Application submitted! A rep will contact you within 1 business day. Questions? Call 1-800-436-1647')">Submit Dealer Application →</button>
+      <div style="font-size:11px;color:var(--ink-soft);margin-top:14px;text-align:center;line-height:1.7;">No commitment required. Territory &amp; pricing details shared after verification.<br>Questions? Call <strong>1-800-436-1647</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DEALER LOGIN SECTION (anchor target)
+     ============================================================ -->
+<section class="sec bg-deep" id="dealer-login">
+  <div style="max-width:480px;margin:0 auto;text-align:center;">
+    <div class="eyebrow" style="justify-content:center;color:var(--green-light);">Existing Dealers</div>
+    <h2 class="section-h light" style="text-align:center;font-size:32px;">Access your dealer portal</h2>
+    <p class="section-p light" style="margin:14px auto 0;text-align:center;">Manage orders, download price sheets, track shipments, and access your exclusive wholesale catalog.</p>
+    <div style="margin-top:32px;display:flex;flex-direction:column;gap:14px;">
+      <div class="form-block"><label class="fl" style="color:rgba(244,247,243,0.6);">Email Address</label><input class="fi" type="email" placeholder="dealer@company.com" style="background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.12);color:var(--cream);"></div>
+      <div class="form-block"><label class="fl" style="color:rgba(244,247,243,0.6);">Password</label><input class="fi" type="password" placeholder="••••••••" style="background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.12);color:var(--cream);"></div>
+      <button class="btn-solid" style="width:100%;justify-content:center;padding:16px;" onclick="alert('Redirecting to dealer portal...')">Log In to Dealer Portal →</button>
+      <a href="#" style="font-size:12px;color:rgba(244,247,243,0.5);text-align:center;margin-top:4px;">Forgot password? &nbsp;|&nbsp; Not a dealer yet? <span style="color:var(--green-light);">Apply here</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA STRIP
+     ============================================================ -->
+<div class="cta-strip">
+  <div class="cta-strip-text">Ready to grow your business?<br><em>Become a wholesale partner today.</em></div>
+  <button class="cta-strip-btn" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">Become a Dealer →</button>
+</div>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div>
+    <div class="footer-logo">Addresses of Distinction</div>
+    <div class="footer-sub">Mailboxes · Street Signs · Built to Last</div>
+  </div>
+  <div class="footer-links">
+    <a href="#">Products</a>
+    <a href="#">Dealer Program</a>
+    <a href="#">Image + Learn</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy</a>
+  </div>
+  <div>
+    <div class="footer-copy">© 2026 Addresses of Distinction</div>
+    <div class="footer-copy" style="margin-top:4px;">📞 1-800-436-1647</div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     JAVASCRIPT — Configurator Logic
+     BigCommerce compatible: vanilla JS only, no dependencies
+     Updated: 6-step flow, category-first (Step 1), dynamic style grids
+     ============================================================ -->
+<script>
+  /* ── State ── */
+  var pricingOn   = false;
+  var _activeCat  = 'mailbox';  /* 'mailbox' | 'street' | 'community' */
+  var TOTAL_TABS  = 6;
+
+  /* ── Price ranges per category ── */
+  var priceRanges = {
+    mailbox:   'Est. range: $89 – $249 depending on model & options',
+    street:    'Est. range: $79 – $419 depending on model & options',
+    community: 'Est. range: $159 – $329 depending on model & options'
+  };
+
+  /* ── Pricing toggle ── */
+  function togglePrice() {
+    pricingOn = !pricingOn;
+    document.getElementById('tog').classList.toggle('on', pricingOn);
+    document.getElementById('qLocked').style.display = pricingOn ? 'none' : 'block';
+    document.getElementById('qReveal').style.display  = pricingOn ? 'block' : 'none';
+  }
+
+  /* ── Tab navigation (1-indexed, 6 tabs) ── */
+  function setTab(n) {
+    for (var i = 1; i <= TOTAL_TABS; i++) {
+      var t = document.getElementById('t' + i);
+      var p = document.getElementById('p' + i);
+      if (t) t.classList.toggle('active', i === n);
+      if (p) p.classList.toggle('active', i === n);
+    }
+    var pcts = [17, 33, 50, 67, 83, 100];
+    document.getElementById('progFill').style.width = pcts[n-1] + '%';
+    var cm = document.querySelector('.config-main');
+    if (cm) cm.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  /* ── Step 1: Category selection ── */
+  function pickCategory(el, name, type) {
+    /* Deselect all category cards */
+    var cats = ['catMailbox','catStreet','catCommunity'];
+    for (var i = 0; i < cats.length; i++) {
+      var c = document.getElementById(cats[i]);
+      if (c) c.classList.remove('sel');
+    }
+    el.classList.add('sel');
+
+    _activeCat = type;
+    document.getElementById('catName').textContent = name;
+    document.getElementById('qCat').textContent    = name;
+
+    /* Show the right style grid in Step 2 */
+    var grids = { mailbox:'stylesMailbox', street:'stylesStreet', community:'stylesCommunity' };
+    for (var key in grids) {
+      var g = document.getElementById(grids[key]);
+      if (g) g.style.display = (key === type) ? 'grid' : 'none';
+    }
+
+    /* Update Step 2 heading */
+    var headings = { mailbox:'Choose Your Mailbox Style', street:'Choose Your Street Sign Style', community:'Choose Your Community Sign Style' };
+    document.getElementById('styleHeading').textContent = headings[type];
+
+    /* Update price range in Step 6 */
+    document.getElementById('priceRange').textContent = priceRanges[type] || '';
+
+    /* Reset style name to first item in new category */
+    var defaults = { mailbox:'Oak Mailbox System', street:'Custom Street Blade', community:'Outdoor Message Center' };
+    document.getElementById('styleName').textContent = defaults[type];
+    document.getElementById('qStyle').textContent    = defaults[type];
+
+    /* Auto-advance to Step 2 */
+    setTimeout(function(){ setTab(2); }, 320);
+  }
+
+  /* ── Step 2: Style selection ── */
+  function pickStyle(el, name, priceHint) {
+    var grid = el.closest('.cfg-prod-grid');
+    var cards = grid.querySelectorAll('.cfg-card');
+    for (var i = 0; i < cards.length; i++) cards[i].classList.remove('sel');
+    el.classList.add('sel');
+    document.getElementById('styleName').textContent = name;
+    document.getElementById('qStyle').textContent    = name;
+    if (priceHint) document.getElementById('priceRange').textContent = 'Est. range: ' + priceHint;
+    /* Update preview caption */
+    var cap = document.getElementById('prevCaption');
+    if (cap) cap.textContent = name + ' · Cast Aluminum · Oil-Rubbed Bronze';
+    setTimeout(function(){ setTab(3); }, 280);
+  }
+
+  /* ── Step 3: Material selection ── */
+  function pickMat(el, name) {
+    var cards = el.closest('.mat-grid').querySelectorAll('.mat-card');
+    for (var i = 0; i < cards.length; i++) cards[i].classList.remove('sel');
+    el.classList.add('sel');
+    document.getElementById('matName').textContent = name;
+    document.getElementById('qMat').textContent   = name;
+  }
+
+  /* ── Step 3: Color swatch ── */
+  function pickColor(el, name) {
+    var swatches = el.closest('.swatch-row').querySelectorAll('.swatch');
+    for (var i = 0; i < swatches.length; i++) swatches[i].classList.remove('active');
+    el.classList.add('active');
+    document.getElementById('colorName').textContent = name;
+    document.getElementById('qColor').textContent   = name;
+  }
+
+  /* ── Step 4: Size buttons ── */
+  function pickSz(el) {
+    var btns = el.closest('.size-row').querySelectorAll('.sz-btn');
+    for (var i = 0; i < btns.length; i++) btns[i].classList.remove('active');
+    el.classList.add('active');
+  }
+
+  /* ── Step 5: Live preview ── */
+  var _num = '4820', _str = 'Magnolia Drive';
+  function updatePrev(num, str) {
+    if (num !== null) _num = num || '4820';
+    if (str !== null) _str = str || 'Magnolia Drive';
+    document.getElementById('prevNum').textContent    = _num;
+    document.getElementById('prevStreet').textContent = _str;
+    document.getElementById('qAddr').textContent      = _num + ' ' + _str;
+  }
+
+  /* ── Scroll reveal animations ── */
+  var revEls = document.querySelectorAll('.proc-step, .benefit, .hcard, .testimonial, .prod-card, .pillar');
+  for (var i = 0; i < revEls.length; i++) {
+    revEls[i].style.opacity   = '0';
+    revEls[i].style.transform = 'translateY(16px)';
+    revEls[i].style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  }
+  var revObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.style.opacity   = '1';
+        e.target.style.transform = 'translateY(0)';
+        revObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  for (var j = 0; j < revEls.length; j++) revObs.observe(revEls[j]);
+</script>
+
+<!-- ============================================================
+     AR QUICK LOOK — Floating "View in AR" Button
+     Works natively on iOS Safari (iPhone/iPad) via rel="ar"
+     Android: uses model-viewer web component fallback
+     The USDZ is base64-encoded inline — no server/CDN needed
+     ============================================================ -->
+
+<!-- Hidden anchor that iOS Safari uses for AR Quick Look -->
+<a id="arLink" rel="ar" href="#"
+   style="display:none;position:fixed;bottom:0;left:0;"
+   download="mailbox.usdz">
+  <!-- iOS requires an <img> child inside the <a rel="ar"> tag -->
+  <img src="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/78/1788/MB-AVSS-01__25900.1702052757.png"
+       alt="AOD Mailbox AR Preview" style="width:1px;height:1px;opacity:0;">
+</a>
+
+<!-- model-viewer for Android / non-iOS fallback -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<!-- AR Floating Button — bottom right corner -->
+<div id="arBtn" onclick="launchAR()" title="View in AR on your phone" style="
+  position:fixed; bottom:28px; right:28px; z-index:9999;
+  display:flex; align-items:center; gap:10px;
+  background:#263822; color:#FAF8F4;
+  padding:14px 22px; border-radius:40px;
+  box-shadow:0 6px 32px rgba(0,0,0,0.28); cursor:pointer;
+  font-family:'Mulish',sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:0.06em; text-transform:uppercase;
+  transition:transform 0.2s, box-shadow 0.2s;
+  border:2px solid rgba(255,255,255,0.1);
+  animation:arPulse 2.5s ease-in-out infinite;
+">
+  <!-- AR cube icon -->
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A8C89A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+    <path d="M2 17l10 5 10-5"/>
+    <path d="M2 12l10 5 10-5"/>
+  </svg>
+  <span id="arBtnLabel">View in AR</span>
+</div>
+
+<!-- AR not supported toast -->
+<div id="arToast" style="
+  display:none; position:fixed; bottom:90px; right:28px; z-index:9999;
+  background:#1C1C1C; color:#FAF8F4; padding:12px 20px;
+  border-radius:8px; font-family:'Mulish',sans-serif; font-size:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.3); max-width:280px; line-height:1.6;
+">
+  📱 <strong>AR works on iPhone/iPad</strong> (iOS 12+) and most Android phones.<br>
+  Open this page on your mobile browser to try it!
+</div>
+
+<!-- model-viewer modal for Android -->
+<div id="arModal" style="
+  display:none; position:fixed; inset:0; z-index:10000;
+  background:rgba(0,0,0,0.85); align-items:center; justify-content:center;
+">
+  <div style="position:relative; width:min(90vw,500px); background:#1C1C1C; border-radius:12px; overflow:hidden;">
+    <button onclick="document.getElementById('arModal').style.display='none'" style="
+      position:absolute; top:12px; right:14px; background:none; border:none;
+      color:#FAF8F4; font-size:24px; cursor:pointer; z-index:1; font-family:sans-serif;
+    ">✕</button>
+    <model-viewer id="mvViewer"
+      alt="AOD Post Mailbox"
+      ar ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1"
+      style="width:100%; height:420px; background:#111;"
+      poster="https://cdn11.bigcommerce.com/s-wddvsuhd/images/stencil/original/products/78/1788/MB-AVSS-01__25900.1702052757.png">
+    </model-viewer>
+    <div style="padding:16px 20px; font-family:'Mulish',sans-serif; color:#FAF8F4; font-size:12px; opacity:0.6; text-align:center;">
+      Tap the AR icon inside the viewer · Rotate with one finger · Pinch to scale
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes arPulse {
+  0%,100% { box-shadow:0 6px 32px rgba(0,0,0,0.28), 0 0 0 0 rgba(74,103,65,0.4); }
+  50%      { box-shadow:0 6px 32px rgba(0,0,0,0.28), 0 0 0 12px rgba(74,103,65,0); }
+}
+#arBtn:hover { transform:translateY(-2px) scale(1.03); box-shadow:0 10px 40px rgba(0,0,0,0.36); animation:none; }
+</style>
+
+<script>
+// ── USDZ base64 data (AOD post mailbox 3D model) ──────────────
+var USDZ_B64 = "UEsDBBQAAAAAAAAAIQBEjM7wQA0AAEANAAAMAAAAbWFpbGJveC51c2RhI3VzZGEgMS4wCigKICAgIGRlZmF1bHRQcmltID0gIlJvb3QiCiAgICBtZXRlcnNQZXJVbml0ID0gMC4wMQogICAgdXBBeGlzID0gIlkiCikKCmRlZiBYZm9ybSAiUm9vdCIgKAogICAga2luZCA9ICJjb21wb25lbnQiCikKewogICAgZGVmIE1lc2ggIlBvc3QiCiAgICB7CiAgICAgICAgaW50W10gZmFjZVZlcnRleENvdW50cyA9IFs0LCA0LCA0LCA0LCA0LCA0XQogICAgICAgIGludFtdIGZhY2VWZXJ0ZXhJbmRpY2VzID0gWzAsMSwyLDMsIDQsNSw2LDcsIDAsNCw1LDEsIDEsNSw2LDIsIDIsNiw3LDMsIDMsNyw0LDBdCiAgICAgICAgcG9pbnQzZltdIHBvaW50cyA9IFsKICAgICAgICAgICAgKC0xLjUsLTUwLC0xLjUpLCAoMS41LC01MCwtMS41KSwgKDEuNSwtNTAsMS41KSwgKC0xLjUsLTUwLDEuNSksCiAgICAgICAgICAgICgtMS41LCAgMCwtMS41KSwgKDEuNSwgIDAsLTEuNSksICgxLjUsICAwLDEuNSksICgtMS41LCAgMCwxLjUpCiAgICAgICAgXQogICAgICAgIHVuaWZvcm0gdG9rZW4gc3ViZGl2aXNpb25TY2hlbWUgPSAibm9uZSIKICAgICAgICByZWwgbWF0ZXJpYWw6YmluZGluZyA9IDwvUm9vdC9Mb29rcy9EYXJrTWV0YWw+CiAgICB9CgogICAgZGVmIE1lc2ggIkJvZHkiCiAgICB7CiAgICAgICAgaW50W10gZmFjZVZlcnRleENvdW50cyA9IFs0LCA0LCA0LCA0LCA0LCA0XQogICAgICAgIGludFtdIGZhY2VWZXJ0ZXhJbmRpY2VzID0gWzAsMSwyLDMsIDQsNSw2LDcsIDAsNCw3LDMsIDEsMiw2LDUsIDAsMSw1LDQsIDMsMiw2LDddCiAgICAgICAgcG9pbnQzZltdIHBvaW50cyA9IFsKICAgICAgICAgICAgKC0xNCwwLC0xMCksICgxNCwwLC0xMCksICgxNCwwLDEwKSwgKC0xNCwwLDEwKSwKICAgICAgICAgICAgKC0xNCwyMiwtMTApLCgxNCwyMiwtMTApLCgxNCwyMiwxMCksKC0xNCwyMiwxMCkKICAgICAgICBdCiAgICAgICAgdW5pZm9ybSB0b2tlbiBzdWJkaXZpc2lvblNjaGVtZSA9ICJub25lIgogICAgICAgIHJlbCBtYXRlcmlhbDpiaW5kaW5nID0gPC9Sb290L0xvb2tzL0JvZHlHcmVlbj4KICAgIH0KCiAgICBkZWYgTWVzaCAiUm9vZkxlZnQiCiAgICB7CiAgICAgICAgaW50W10gZmFjZVZlcnRleENvdW50cyA9IFs0XQogICAgICAgIGludFtdIGZhY2VWZXJ0ZXhJbmRpY2VzID0gWzAsMSwyLDNdCiAgICAgICAgcG9pbnQzZltdIHBvaW50cyA9IFsKICAgICAgICAgICAgKC0xNSwyMiwwKSwgKDE1LDIyLDApLCAoMTUsMjIsLTExKSwgKC0xNSwyMiwtMTEpCiAgICAgICAgXQogICAgICAgIHVuaWZvcm0gdG9rZW4gc3ViZGl2aXNpb25TY2hlbWUgPSAibm9uZSIKICAgICAgICByZWwgbWF0ZXJpYWw6YmluZGluZyA9IDwvUm9vdC9Mb29rcy9Cb2R5R3JlZW4+CiAgICB9CgogICAgZGVmIE1lc2ggIlJvb2ZSaWdodCIKICAgIHsKICAgICAgICBpbnRbXSBmYWNlVmVydGV4Q291bnRzID0gWzRdCiAgICAgICAgaW50W10gZmFjZVZlcnRleEluZGljZXMgPSBbMCwxLDIsM10KICAgICAgICBwb2ludDNmW10gcG9pbnRzID0gWwogICAgICAgICAgICAoLTE1LDIyLDApLCAoMTUsMjIsMCksICgxNSwyMiwxMSksICgtMTUsMjIsMTEpCiAgICAgICAgXQogICAgICAgIHVuaWZvcm0gdG9rZW4gc3ViZGl2aXNpb25TY2hlbWUgPSAibm9uZSIKICAgICAgICByZWwgbWF0ZXJpYWw6YmluZGluZyA9IDwvUm9vdC9Mb29rcy9Cb2R5R3JlZW4+CiAgICB9CgogICAgZGVmIE1lc2ggIkZsYWciCiAgICB7CiAgICAgICAgaW50W10gZmFjZVZlcnRleENvdW50cyA9IFs0XQogICAgICAgIGludFtdIGZhY2VWZXJ0ZXhJbmRpY2VzID0gWzAsMSwyLDNdCiAgICAgICAgcG9pbnQzZltdIHBvaW50cyA9IFsKICAgICAgICAgICAgKDE0LDEwLC0xKSwgKDE0LDEwLC03KSwgKDE0LDE3LC03KSwgKDE0LDE3LC0xKQogICAgICAgIF0KICAgICAgICB1bmlmb3JtIHRva2VuIHN1YmRpdmlzaW9uU2NoZW1lID0gIm5vbmUiCiAgICAgICAgcmVsIG1hdGVyaWFsOmJpbmRpbmcgPSA8L1Jvb3QvTG9va3MvRmxhZ1JlZD4KICAgIH0KCiAgICBkZWYgU2NvcGUgIkxvb2tzIgogICAgewogICAgICAgIGRlZiBNYXRlcmlhbCAiQm9keUdyZWVuIgogICAgICAgIHsKICAgICAgICAgICAgdG9rZW4gb3V0cHV0czpzdXJmYWNlLmNvbm5lY3QgPSA8L1Jvb3QvTG9va3MvQm9keUdyZWVuL1NoYWRlci5vdXRwdXRzOnN1cmZhY2U+CiAgICAgICAgICAgIGRlZiBTaGFkZXIgIlNoYWRlciIKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgdW5pZm9ybSB0b2tlbiBpbmZvOmlkID0gIlVzZFByZXZpZXdTdXJmYWNlIgogICAgICAgICAgICAgICAgY29sb3IzZiBpbnB1dHM6ZGlmZnVzZUNvbG9yID0gKDAuMDcsIDAuMTEsIDAuMDYpCiAgICAgICAgICAgICAgICBmbG9hdCBpbnB1dHM6bWV0YWxsaWMgPSAwLjE1CiAgICAgICAgICAgICAgICBmbG9hdCBpbnB1dHM6cm91Z2huZXNzID0gMC40NQogICAgICAgICAgICAgICAgdG9rZW4gb3V0cHV0czpzdXJmYWNlCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgZGVmIE1hdGVyaWFsICJEYXJrTWV0YWwiCiAgICAgICAgewogICAgICAgICAgICB0b2tlbiBvdXRwdXRzOnN1cmZhY2UuY29ubmVjdCA9IDwvUm9vdC9Mb29rcy9EYXJrTWV0YWwvU2hhZGVyLm91dHB1dHM6c3VyZmFjZT4KICAgICAgICAgICAgZGVmIFNoYWRlciAiU2hhZGVyIgogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICB1bmlmb3JtIHRva2VuIGluZm86aWQgPSAiVXNkUHJldmlld1N1cmZhY2UiCiAgICAgICAgICAgICAgICBjb2xvcjNmIGlucHV0czpkaWZmdXNlQ29sb3IgPSAoMC4wNSwgMC4wNSwgMC4wNSkKICAgICAgICAgICAgICAgIGZsb2F0IGlucHV0czptZXRhbGxpYyA9IDAuNQogICAgICAgICAgICAgICAgZmxvYXQgaW5wdXRzOnJvdWdobmVzcyA9IDAuMwogICAgICAgICAgICAgICAgdG9rZW4gb3V0cHV0czpzdXJmYWNlCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgZGVmIE1hdGVyaWFsICJGbGFnUmVkIgogICAgICAgIHsKICAgICAgICAgICAgdG9rZW4gb3V0cHV0czpzdXJmYWNlLmNvbm5lY3QgPSA8L1Jvb3QvTG9va3MvRmxhZ1JlZC9TaGFkZXIub3V0cHV0czpzdXJmYWNlPgogICAgICAgICAgICBkZWYgU2hhZGVyICJTaGFkZXIiCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHVuaWZvcm0gdG9rZW4gaW5mbzppZCA9ICJVc2RQcmV2aWV3U3VyZmFjZSIKICAgICAgICAgICAgICAgIGNvbG9yM2YgaW5wdXRzOmRpZmZ1c2VDb2xvciA9ICgwLjc1LCAwLjA4LCAwLjA4KQogICAgICAgICAgICAgICAgZmxvYXQgaW5wdXRzOm1ldGFsbGljID0gMC4wCiAgICAgICAgICAgICAgICBmbG9hdCBpbnB1dHM6cm91Z2huZXNzID0gMC43CiAgICAgICAgICAgICAgICB0b2tlbiBvdXRwdXRzOnN1cmZhY2UKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQo=";
+
+function b64toBlob(b64, mime) {
+  var binary = atob(b64);
+  var bytes = new Uint8Array(binary.length);
+  for (var i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new Blob([bytes], { type: mime });
+}
+
+function launchAR() {
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  var isAndroid = /Android/.test(navigator.userAgent);
+
+  if (isIOS) {
+    // iOS AR Quick Look — set blob URL on the hidden <a rel="ar">
+    var blob = b64toBlob(USDZ_B64, 'model/vnd.usdz+zip');
+    var url = URL.createObjectURL(blob);
+    var link = document.getElementById('arLink');
+    link.href = url;
+    link.click();
+    document.getElementById('arBtnLabel').textContent = 'Opening AR…';
+    setTimeout(function(){ document.getElementById('arBtnLabel').textContent = 'View in AR'; }, 3000);
+
+  } else if (isAndroid || window.navigator.xr) {
+    // Android / WebXR: show model-viewer modal
+    var mv = document.getElementById('mvViewer');
+    var blob = b64toBlob(USDZ_B64, 'model/vnd.usdz+zip');
+    mv.src = URL.createObjectURL(blob);
+    document.getElementById('arModal').style.display = 'flex';
+
+  } else {
+    // Desktop: show helpful toast
+    var toast = document.getElementById('arToast');
+    toast.style.display = 'block';
+    setTimeout(function(){ toast.style.display = 'none'; }, 5000);
+  }
+}
+</script>
+</body>
+</html>
